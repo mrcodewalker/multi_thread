@@ -1,17 +1,14 @@
 package org.example;
 
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.List;
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Employee extends Thread{
     private List<Order> orders;
-    public Employee(List<Order> orders){
-        this.orders = orders;
-    }
     @Override
     public void run(){
         System.out.println("Nhan vien bat dau cong viec: ");
