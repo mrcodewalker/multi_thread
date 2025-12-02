@@ -1,11 +1,19 @@
 package org.example;
 
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
 public class Main {
-    public static void main(String[] args) {
+    private static final ProcessOrder processOrder = new ProcessOrder();
+    public static void main(String[] args) throws InterruptedException {
 
 //        firstExample();
 //        secondExample();
-        thirdExample();
+//        thirdExample();
+        doingLab();
+    }
+    public static void doingLab() throws InterruptedException {
+        processOrder.mainFunction();
     }
     public static void firstExample(){
         FirstThread firstThread = new FirstThread();

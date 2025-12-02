@@ -10,7 +10,7 @@ import java.util.Scanner;
 import java.util.stream.Collectors;
 
 public class ProcessOrder {
-    public static void main(String[] args) throws InterruptedException {
+    public void mainFunction() throws InterruptedException {
         Scanner scanner = new Scanner(System.in);
         List<Order> orders = new ArrayList<>();
         orders.add(new Order(1, 10));
